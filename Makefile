@@ -5,7 +5,8 @@ hello:	hello.o
 
 hello.o:
 	nasm -f elf64 -o hello.o hello.asm
-
+	
+	
 
 hello_syscall: hello_syscall.o
 	ld -o hello_syscall hello_syscall.o
